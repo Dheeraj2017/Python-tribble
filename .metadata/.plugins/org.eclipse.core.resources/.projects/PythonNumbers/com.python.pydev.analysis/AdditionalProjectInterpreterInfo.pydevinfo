@@ -1,0 +1,35 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/PythonNumbers/com.python.pydev.analysis/v2_indexcache
+min|1440295329000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/min.py
+pow|1440295441000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/pow.py
+max|1440295284000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/max.py
+choice|1440295547000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/choice.py
+uniform|1440295785000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/uniform.py
+seed|1440295680000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/seed.py
+ceil|1440294527000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/ceil.py
+sqrt|1440295515000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/sqrt.py
+modf|1440295378000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/modf.py
+cmp|1440294782000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/cmp.py
+round|1440295474000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/round.py
+log|1440295152000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/log.py
+log10|1440295226000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/log10.py
+fabs|1440294986000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/fabs.py
+exp|1440294909000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/exp.py
+abs|1440294441000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/abs.py
+floor|1440295086000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/floor.py
+random2|1440295640000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/random2.py
+shuffle|1440295728000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/shuffle.py
+randomrange|1440295598000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/randomrange.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=shuffle
+-- END DICTIONARY
+-- START TREE 1
+1
+lis|1|list!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

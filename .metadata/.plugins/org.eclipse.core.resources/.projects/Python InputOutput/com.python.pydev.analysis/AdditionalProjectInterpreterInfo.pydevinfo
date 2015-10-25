@@ -1,0 +1,46 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Python InputOutput/com.python.pydev.analysis/v2_indexcache
+rename|1441895485000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/rename.py
+next|1441895804000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/next.py
+fileobject|1441895164000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/fileobject.py
+rmdir|1441895629000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/rmdir.py
+mkdir|1441895522000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/mkdir.py
+fileposition|1441895444000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/fileposition.py
+close|1441895274000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/close.py
+rawstring|1441894981000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/rawstring.py
+readingwritting|1441895342000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/readingwritting.py
+getcwd|1441895579000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/getcwd.py
+input|1441895077000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/input.py
+flush|1441895680000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/flush.py
+fileno|1441895717000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/fileno.py
+read|1441895396000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/read.py
+chdir|1441895549000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/chdir.py
+isatty|1441895749000000000|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/isatty.py
+-- END DISKCACHE
+-- START DICTIONARY
+11
+2=readingwritting
+11=input
+8=flush
+1=fileno
+5=next
+9=fileobject
+3=read
+7=fileposition
+4=isatty
+10=rawstring
+6=close
+-- END DICTIONARY
+-- START TREE 1
+6
+fid|1|fid!11@
+fo|9|fo!19@fo!27@fo!35@fo!43@fo!51@fo!59@fo!67@fo!75@fo!11@
+lin|1|line!43@
+pos|1|position!59@
+ret|1|ret!35@
+str|4|str1!83@str1!59@str1!27@str1!91@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

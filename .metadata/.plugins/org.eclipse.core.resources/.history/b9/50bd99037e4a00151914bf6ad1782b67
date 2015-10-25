@@ -1,0 +1,14 @@
+#!/usr/bin/python
+str1 = "this is string example....wow!!!";
+print(str1.startswith('this' ));
+
+print(str1.startswith('is', 2, 4 ));
+
+print(str1.startswith('this', 2, 4 ));
+
+
+
+
+               
+               
+

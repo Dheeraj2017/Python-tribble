@@ -1,0 +1,362 @@
+sudo -xvf  eclipsename
+
+
+ki koi pather ki murat hai 
+kisi pather mai purat hai 
+lo humne dekh li duniya jo itni khubsurat hai 
+jamana apni samjhe per mujhe apni khbar ye hai 
+tujhe meri jarurt hai ,,,,mujhe teri jarurt hai 
+
+
+akhil bhartiya pithitd yuvak sangh ke liye ....
+
+
+ki panaho mai jo aaya ho,.. to us per waar kya karna ....
+jo dil haara hua ho ....to us per adhikaar kya karna ....
+mohabbat ka maza to dubnee ki kashmakash mai hai ...
+jo maalom ho gahraai to ..dariya paar kya karna ....
+
+
+koi manzil nahi jachti ,,..safar acha nahi laghta ...
+agar ghar loaut bhi aau ...to ghar acha nahi lagta ...
+karu kuch bhi mai ab duniya ko sab acha hi lagta hai ...
+per mujhe ab bhi tumhare bin kuch bhi ....acha nahi laghta ....
+
+
+How To Install Apache Tomcat 7 on Ubuntu 14.04 via Apt-Get
+Tags: Apache, Java Distribution: Ubuntu
+About Apache Tomcat
+
+Apache Tomcat is an application server that is used to serve Java applications to the web. Tomcat is an open source implementation of the Java Servlet and JavaServer Pages technologies, released by the Apache Software Foundation.
+
+This tutorial covers the basic installation and some configuration of Tomcat 7.0.x, the latest stable version at the time of writing, on your Ubuntu 14.04 VPS.
+
+There are two basic ways to install Tomcat on Ubuntu:
+
+    Install through apt-get. This is the simplest method.
+
+    Download the binary distribution from the Apache Tomcat site. This guide does not cover this method; refer to Apache Tomcat Documentation for instructions.
+
+For this tutorial, we will use the simplest method: apt-get. Please note that this will install the latest release of Tomcat that is in the official Ubuntu repositories, which may or may not be the latest release of Tomcat. If you want to guarantee that you are installing the latest version of Tomcat, you can always download the latest binary distribtion.
+Step One — Prerequisites
+
+Before you begin with this guide, you should have a separate, non-root user account set up on your server. You can learn how to do this by completing steps 1-4 in the initial server setup for Ubuntu 14.04. We will be using the demo user created here for the rest of this tutorial.
+Step Two - Install Tomcat
+
+The first thing you will want to do is update your apt-get package lists:
+
+sudo apt-get update
+
+Now you are ready to install Tomcat. Run the following command to start the installation:
+
+sudo apt-get install tomcat7
+
+Answer yes at the prompt to install tomcat. This will install Tomcat and its dependencies, such as Java, and it will also create the tomcat7 user. It also starts Tomcat with its default settings.
+
+Tomcat is not completely set up yet, but you can access the default splash page by going to your domain or IP address followed by :8080 in a web browser:
+
+http://your_ip_address:8080
+
+You will see a splash page that says "It works!", in addition to other information. Now we will go deeper into the installation of Tomcat.
+Step Three - Installing Additional Packages
+
+Note: This section is not necessary if you are already familiar with Tomcat and you do not need to use the web management interface, documentation, or examples. If you are just getting into Tomcat for the first time, please continue.
+
+With the following command, we will install the Tomcat online documentation, the web interface (manager webapp), and a few example webapps:
+
+sudo apt-get install tomcat7-docs tomcat7-admin tomcat7-examples
+
+Answer yes at the prompt to install these packages. We will get into the usage and configuration of these tools in a later section. Next, we will install the Java Development Kit.
+Step Four - Install Java Development Kit (Optional)
+
+If you are planning on developing apps on this server, you will want to be sure to install the software in this section.
+
+The Java Development Kit (JDK) enables us to develop Java applications to run in our Tomcat server. Running the following command will install openjdk-7-jdk:
+
+sudo apt-get install default-jdk
+
+In addition to JDK, the Tomcat documentation suggests also installing Apache Ant, which is used to build Java applications, and a source control system, such as git. Let's install both of those with the following command:
+
+sudo apt-get install ant git
+
+For more information about Apache Ant, refer to the official manual. For a tutorial on using git, refer to DigitalCloud's Git Tutorial.
+Step 5 - Configure Tomcat Web Management Interface
+
+In order to use the manager webapp installed in Step 3, we must add a login to our Tomcat server. We will do this by editing the tomcat-users.xml file:
+
+sudo nano /etc/tomcat7/tomcat-users.xml
+
+This file is filled with comments which describe how to configure the file. You may want to delete all the comments between the following two lines, or you may leave them if you want to reference the examples:
+
+<tomcat-users>
+</tomcat-users>
+
+You will want to add a user who can access the manager-gui and admin-gui (the management interface that we installed in Step Three). You can do so by defining a user similar to the example below. Be sure to change the password and username if you wish:
+
+<tomcat-users>
+    <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+</tomcat-users>
+
+Save and quit the tomcat-users.xml file. To put our changes into effect, restart the Tomcat service:
+
+sudo service tomcat7 restart
+
+Step 6 - Access the Web Interface
+
+Now that we've configured an admin user, let's access the web management interface in a web browser:
+
+http://your_ip_address:8080
+************************************************************************************
+*************************************************************************************
+Apache Tomcat
+
+Apache Tomcat is a web container that allows you to serve Java Servlets and JSP (Java Server Pages) web applications.
+
+Ubuntu has supported packages for both Tomcat 6 and 7. Tomcat 6 is the legacy version, and Tomcat 7 is the current version where new features are implemented. Both are considered stable. This guide will focus on Tomcat 7, but most configuration details are valid for both versions.
+
+The Tomcat packages in Ubuntu support two different ways of running Tomcat. You can install them as a classic unique system-wide instance, that will be started at boot time will run as the tomcat7 (or tomcat6) unprivileged user. But you can also deploy private instances that will run with your own user rights, and that you should start and stop by yourself. This second way is particularly useful in a development server context where multiple users need to test on their own private Tomcat instances.
+
+    System-wide installation
+    Configuration
+    Using Tomcat standard webapps
+    Using private instances
+    References
+
+System-wide installation
+
+To install the Tomcat server, you can enter the following command in the terminal prompt:
+
+sudo apt-get install tomcat7
+
+This will install a Tomcat server with just a default ROOT webapp that displays a minimal "It works" page by default.
+Configuration
+
+Tomcat configuration files can be found in /etc/tomcat7. Only a few common configuration tweaks will be described here, please see Tomcat 7.0 documentation for more.
+Changing default ports
+
+By default Tomcat runs a HTTP connector on port 8080 and an AJP connector on port 8009. You might want to change those default ports to avoid conflict with another application on the system. This is done by changing the following lines in /etc/tomcat7/server.xml:
+
+<Connector port="8080" protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" />
+...
+<Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+
+Changing JVM used
+
+By default Tomcat will run preferably with OpenJDK JVMs, then try the Sun JVMs, then try some other JVMs. You can force Tomcat to use a specific JVM by setting JAVA_HOME in /etc/default/tomcat7:
+
+JAVA_HOME=/usr/lib/jvm/java-6-sun
+
+Declaring users and roles
+
+Usernames, passwords and roles (groups) can be defined centrally in a Servlet container. This is done in the /etc/tomcat7/tomcat-users.xml file:
+
+<role rolename="admin"/>
+<user username="tomcat" password="s3cret" roles="admin"/>
+
+Using Tomcat standard webapps
+
+Tomcat is shipped with webapps that you can install for documentation, administration or demo purposes.
+Tomcat documentation
+
+The tomcat7-docs package contains Tomcat documentation, packaged as a webapp that you can access by default at http://yourserver:8080/docs. You can install it by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-docs
+
+Tomcat administration webapps
+
+The tomcat7-admin package contains two webapps that can be used to administer the Tomcat server using a web interface. You can install them by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-admin
+Apache Tomcat
+
+Apache Tomcat is a web container that allows you to serve Java Servlets and JSP (Java Server Pages) web applications.
+
+Ubuntu has supported packages for both Tomcat 6 and 7. Tomcat 6 is the legacy version, and Tomcat 7 is the current version where new features are implemented. Both are considered stable. This guide will focus on Tomcat 7, but most configuration details are valid for both versions.
+
+The Tomcat packages in Ubuntu support two different ways of running Tomcat. You can install them as a classic unique system-wide instance, that will be started at boot time will run as the tomcat7 (or tomcat6) unprivileged user. But you can also deploy private instances that will run with your own user rights, and that you should start and stop by yourself. This second way is particularly useful in a development server context where multiple users need to test on their own private Tomcat instances.
+
+    System-wide installation
+    Configuration
+    Using Tomcat standard webapps
+    Using private instances
+    References
+
+System-wide installation
+
+To install the Tomcat server, you can enter the following command in the terminal prompt:
+
+sudo apt-get install tomcat7
+
+This will install a Tomcat server with just a default ROOT webapp that displays a minimal "It works" page by default.
+Configuration
+
+Tomcat configuration files can be found in /etc/tomcat7. Only a few common configuration tweaks will be described here, please see Tomcat 7.0 documentation for more.
+Changing default ports
+
+By default Tomcat runs a HTTP connector on port 8080 and an AJP connector on port 8009. You might want to change those default ports to avoid conflict with another application on the system. This is done by changing the following lines in /etc/tomcat7/server.xml:
+
+<Connector port="8080" protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" />
+...
+<Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+
+Changing JVM used
+
+By default Tomcat will run preferably with OpenJDK JVMs, then try the Sun JVMs, then try some other JVMs. You can force Tomcat to use a specific JVM by setting JAVA_HOME in /etc/default/tomcat7:
+
+JAVA_HOME=/usr/lib/jvm/java-6-sun
+
+Declaring users and roles
+
+Usernames, passwords and roles (groups) can be defined centrally in a Servlet container. This is done in the /etc/tomcat7/tomcat-users.xml file:
+
+<role rolename="admin"/>
+<user username="tomcat" password="s3cret" roles="admin"/>
+
+Using Tomcat standard webapps
+
+Tomcat is shipped with webapps that you can install for documentation, administration or demo purposes.
+Tomcat documentation
+
+The tomcat7-docs package contains Tomcat documentation, packaged as a webapp that you can access by default at http://yourserver:8080/docs. You can install it by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-docs
+
+Tomcat administration webapps
+
+The tomcat7-admin package contains two webapps that can be used to administer the Tomcat server using a web interface. You can install them by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-admin
+
+The first one is the manager webapp, which you can access by default at http://yourserver:8080/manager/html. It is primarily used to get server status and restart webapps.
+
+Access to the manager application is protected by default: you need to define a user with the role "manager-gui" in /etc/tomcat7/tomcat-users.xml before you can access it.
+
+The second one is the host-manager webapp, which you can access by default at http://yourserver:8080/host-manager/html. It can be used to create virtual hosts dynamically.
+
+Access to the host-manager application is also protected by default: you need to define a user with the role "admin-gui" in /etc/tomcat7/tomcat-users.xml before you can access it.
+
+For security reasons, the tomcat7 user cannot write to the /etc/tomcat7 directory by default. Some features in these admin webapps (application deployment, virtual host creation) need write access to that directory. If you want to use these features execute the following, to give users in the tomcat7 group the necessary rights:
+
+sudo chgrp -R tomcat7 /etc/tomcat7
+sudo chmod -R g+w /etc/tomcat7 
+
+Tomcat examples webapps
+
+The tomcat7-examples package contains two webapps that can be used to test or demonstrate Servlets and JSP features, which you can access them by default at http://yourserver:8080/examples. You can install them by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-examples
+
+Using private instances
+
+Tomcat is heavily used in development and testing scenarios where using a single system-wide instance doesn't meet the requirements of multiple users on a single system. The Tomcat packages in Ubuntu come with tools to help deploy your own user-oriented instances, allowing every user on a system to run (without root rights) separate private instances while still using the system-installed libraries.
+
+It is possible to run the system-wide instance and the private instances in parallel, as long as they do not use the same TCP ports.
+Installing private instance support
+
+You can install everything necessary to run private instances by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-user
+
+Creating a private instance
+
+You can create a private instance directory by entering the following command in the terminal prompt:
+
+tomcat7-instance-create my-instance
+
+This will create a new my-instance directory with all the necessary subdirectories and scripts. You can for example install your common libraries in the lib/ subdirectory and deploy your webapps in the webapps/ subdirectory. No webapps are deployed by default.
+Configuring your private instance
+
+You will find the classic Tomcat configuration files for your private instance in the conf/ subdirectory. You should for example certainly edit the conf/server.xml file to change the default ports used by your private Tomcat instance to avoid conflict with other instances that might be running.
+Starting/stopping your private instance
+
+You can start your private instance by entering the following command in the terminal prompt (supposing your instance is located in the my-instance directory):
+
+my-instance/bin/startup.sh
+
+You should check the logs/ subdirectory for any error. If you have a java.net.BindException: Address already in use<null>:8080 error, it means that the port you're using is already taken and that you should change it.
+
+You can stop your instance by entering the following command in the terminal prompt (supposing your instance is located in the my-instance directory):
+
+my-instance/bin/shutdown.sh
+
+
+The first one is the manager webapp, which you can access by default at http://yourserver:8080/manager/html. It is primarily used to get server status and restart webapps.
+
+Access to the manager application is protected by default: you need to define a user with the role "manager-gui" in /etc/tomcat7/tomcat-users.xml before you can access it.
+
+The second one is the host-manager webapp, which you can access by default at http://yourserver:8080/host-manager/html. It can be used to create virtual hosts dynamically.
+
+Access to the host-manager application is also protected by default: you need to define a user with the role "admin-gui" in /etc/tomcat7/tomcat-users.xml before you can access it.
+
+For security reasons, the tomcat7 user cannot write to the /etc/tomcat7 directory by default. Some features in these admin webapps (application deployment, virtual host creation) need write access to that directory. If you want to use these features execute the following, to give users in the tomcat7 group the necessary rights:
+
+sudo chgrp -R tomcat7 /etc/tomcat7
+sudo chmod -R g+w /etc/tomcat7 
+
+Tomcat examples webapps
+
+The tomcat7-examples package contains two webapps that can be used to test or demonstrate Servlets and JSP features, which you can access them by default at http://yourserver:8080/examples. You can install them by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-examples
+
+Using private instances
+
+Tomcat is heavily used in development and testing scenarios where using a single system-wide instance doesn't meet the requirements of multiple users on a single system. The Tomcat packages in Ubuntu come with tools to help deploy your own user-oriented instances, allowing every user on a system to run (without root rights) separate private instances while still using the system-installed libraries.
+
+It is possible to run the system-wide instance and the private instances in parallel, as long as they do not use the same TCP ports.
+Installing private instance support
+
+You can install everything necessary to run private instances by entering the following command in the terminal prompt:
+
+sudo apt-get install tomcat7-user
+
+Creating a private instance
+
+You can create a private instance directory by entering the following command in the terminal prompt:
+
+tomcat7-instance-create my-instance
+
+This will create a new my-instance directory with all the necessary subdirectories and scripts. You can for example install your common libraries in the lib/ subdirectory and deploy your webapps in the webapps/ subdirectory. No webapps are deployed by default.
+Configuring your private instance
+
+You will find the classic Tomcat configuration files for your private instance in the conf/ subdirectory. You should for example certainly edit the conf/server.xml file to change the default ports used by your private Tomcat instance to avoid conflict with other instances that might be running.
+Starting/stopping your private instance
+
+You can start your private instance by entering the following command in the terminal prompt (supposing your instance is located in the my-instance directory):
+
+my-instance/bin/startup.sh
+
+You should check the logs/ subdirectory for any error. If you have a java.net.BindException: Address already in use<null>:8080 error, it means that the port you're using is already taken and that you should change it.
+
+You can stop your instance by entering the following command in the terminal prompt (supposing your instance is located in the my-instance directory):
+
+my-instance/bin/shutdown.sh
+
+**************************************************************
+ye mere dil ka chahna
+ek aakhri faisla hai 
+ab saath na hoga tera 
+ye dard ka intehaan hai 
+tha pyaar tera to jutha 
+sacha magar ye khuda hai 
+tanhaiyu mai hu roya 
+tab jaakar mujhko mila hai 
+duniya ke rishto mai to ye hota hi rha hai 
+laila aur majnu bhi ek durse se jhudda hai 
+....
+tanhayiyu ka aalam....ashak mitae yaha 
+barbadiya bhi sabko ...jaane mili hai kaha pe
+tere bina na jee lage ...
+
+
+
+*****************
+pyaar mai jo kaam najdikiya nahi kar paati hai .....vo kaam faaslee kar dete hai ... 
+
+aur uski ahmiyat tbhi samjh mai aati hai jab vo aapse durr ho jati hai ....
+
+

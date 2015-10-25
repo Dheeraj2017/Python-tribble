@@ -1,0 +1,46 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/PythonList/com.python.pydev.analysis/v2_indexcache
+MinList|1440514779000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/MinList.py
+Listpop|1440515218000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/Listpop.py
+DeleteListElement|1440513640000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/DeleteListElement.py
+ListIndex|1440515137000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/ListIndex.py
+cmp|1440514049000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/cmp.py
+ListSqe|1440514386000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/ListSqe.py
+ListRemove|1440515258000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/ListRemove.py
+SortList|1440524565000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/SortList.py
+AccessValueFromList|1440513503000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/AccessValueFromList.py
+lenlist|1440514084000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/lenlist.py
+ReverseList|1440524507000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/ReverseList.py
+listextend|1440515092000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/listextend.py
+MaxList|1440514271000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/MaxList.py
+updateList|1440513598000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/updateList.py
+ListInsert|1440515164000000000|/home/dheeraj/dheeraj drives/Python eclipse/PythonList/src/ListInsert.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+9=Listpop
+10=MinList
+11=DeleteListElement
+8=ListIndex
+1=cmp
+3=ListSqe
+6=ListRemove
+5=SortList
+12=AccessValueFromList
+2=ReverseList
+4=listextend
+13=updateList
+7=ListInsert
+-- END DICTIONARY
+-- START TREE 1
+5
+a|1|a!11@
+ali|8|aList!19@aList!27@aList!35@aList!43@aList!51@aList!59@aList!67@aList!75@
+atu|1|aTuple!27@
+bli|1|bList!35@
+lis|7|list3!11@list2!83@list1!91@list2!99@list1!99@lists!107@list1!83@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

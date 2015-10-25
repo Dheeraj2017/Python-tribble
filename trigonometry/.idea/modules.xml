@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Date and Time/.idea/Date and Time.iml" filepath="$PROJECT_DIR$/../Date and Time/.idea/Date and Time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DecisionMaking/.idea/DecisionMaking.iml" filepath="$PROJECT_DIR$/../DecisionMaking/.idea/DecisionMaking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Dictionary/.idea/Dictionary.iml" filepath="$PROJECT_DIR$/../Dictionary/.idea/Dictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Function/.idea/Function.iml" filepath="$PROJECT_DIR$/../Function/.idea/Function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HelloWorld/.idea/HelloWorld.iml" filepath="$PROJECT_DIR$/../HelloWorld/.idea/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Loops/.idea/Loops.iml" filepath="$PROJECT_DIR$/../Loops/.idea/Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Operator/.idea/Operator.iml" filepath="$PROJECT_DIR$/../Operator/.idea/Operator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python InputOutput/.idea/Python InputOutput.iml" filepath="$PROJECT_DIR$/../Python InputOutput/.idea/Python InputOutput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonList/.idea/PythonList.iml" filepath="$PROJECT_DIR$/../PythonList/.idea/PythonList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonNumbers/.idea/PythonNumbers.iml" filepath="$PROJECT_DIR$/../PythonNumbers/.idea/PythonNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonString/.idea/PythonString.iml" filepath="$PROJECT_DIR$/../PythonString/.idea/PythonString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonTuple/.idea/PythonTuple.iml" filepath="$PROJECT_DIR$/../PythonTuple/.idea/PythonTuple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/trigonometry.iml" filepath="$PROJECT_DIR$/.idea/trigonometry.iml" />
+    </modules>
+  </component>
+</project>

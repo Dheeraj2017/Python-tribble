@@ -1,0 +1,38 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Function/com.python.pydev.analysis/v2_indexcache
+fucntion|1440867335000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/fucntion.py
+lambda|1440867542000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/lambda.py
+call_funct|1440849551000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/call_funct.py
+returnfunc|1440867591000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/returnfunc.py
+pass_by_reference1|1440867287000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/pass_by_reference1.py
+defalut_argument|1440867450000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/defalut_argument.py
+variable_length_argument|1440867501000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/variable_length_argument.py
+pass_by_reference|1440867219000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/pass_by_reference.py
+variable|1440867642000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/variable.py
+function1|1440867391000000000|/home/dheeraj/dheeraj drives/Python eclipse/Function/src/function1.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+4=fucntion
+10=lambda
+6=call_funct
+9=returnfunc
+7=defalut_argument
+2=pass_by_reference1
+5=variable_length_argument
+1=pass_by_reference
+8=variable
+3=function1
+-- END DICTIONARY
+-- START TREE 1
+5
+cha|2|changeme!10@changeme!18@
+myl|2|mylist!11@mylist!19@
+pri|5|printinfo!26@printme!34@printinfo!42@printme!50@printinfo!58@
+sum|3|sum2!66@sum1!74@sum1!83@
+tot|2|total!75@total!67@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

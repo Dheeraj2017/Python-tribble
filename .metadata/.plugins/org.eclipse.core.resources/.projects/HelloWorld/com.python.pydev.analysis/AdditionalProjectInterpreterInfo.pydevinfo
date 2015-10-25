@@ -1,0 +1,32 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/com.python.pydev.analysis/v2_indexcache
+module2|1439696234000000000|/home/dheeraj/dheeraj drives/Python eclipse/HelloWorld/src/module2.py
+dict|1439697184000000000|/home/dheeraj/dheeraj drives/Python eclipse/HelloWorld/src/dict.py
+module1|1439482064000000000|/home/dheeraj/dheeraj drives/Python eclipse/HelloWorld/src/module1.py
+tuple|1439696819000000000|/home/dheeraj/dheeraj drives/Python eclipse/HelloWorld/src/tuple.py
+FirstApp|1436184826000000000|/home/dheeraj/dheeraj drives/Python eclipse/HelloWorld/src/FirstApp.py
+list|1439696571000000000|/home/dheeraj/dheeraj drives/Python eclipse/HelloWorld/src/list.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+4=module2
+2=dict
+1=module1
+5=tuple
+3=list
+-- END DICTIONARY
+-- START TREE 1
+8
+cou|1|counter!11@
+dic|1|dict1!19@
+mil|1|miles!11@
+nam|1|name!11@
+old|1|oldlist!27@
+str|1|stri!35@
+tin|3|tinydict!19@tinylist!27@tinytuple!43@
+tup|1|tuple1!43@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

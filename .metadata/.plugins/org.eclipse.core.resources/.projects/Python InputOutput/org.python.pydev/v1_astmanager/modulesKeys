@@ -1,0 +1,17 @@
+MODULES_MANAGER_V2
+chdir|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/chdir.py
+close|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/close.py
+fileno|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/fileno.py
+fileobject|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/fileobject.py
+fileposition|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/fileposition.py
+flush|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/flush.py
+getcwd|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/getcwd.py
+input|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/input.py
+isatty|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/isatty.py
+mkdir|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/mkdir.py
+next|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/next.py
+rawstring|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/rawstring.py
+read|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/read.py
+readingwritting|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/readingwritting.py
+rename|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/rename.py
+rmdir|/home/dheeraj/dheeraj drives/Python eclipse/Python InputOutput/src/rmdir.py

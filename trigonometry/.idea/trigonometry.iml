@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="PythonTuple" />
+    <orderEntry type="module" module-name="PythonString" />
+    <orderEntry type="module" module-name="PythonNumbers" />
+    <orderEntry type="module" module-name="PythonList" />
+    <orderEntry type="module" module-name="Python InputOutput" />
+    <orderEntry type="module" module-name="Operator" />
+    <orderEntry type="module" module-name="Loops" />
+    <orderEntry type="module" module-name="HelloWorld" />
+    <orderEntry type="module" module-name="Function" />
+    <orderEntry type="module" module-name="Dictionary" />
+    <orderEntry type="module" module-name="DecisionMaking" />
+    <orderEntry type="module" module-name="Date and Time" />
+  </component>
+</module>

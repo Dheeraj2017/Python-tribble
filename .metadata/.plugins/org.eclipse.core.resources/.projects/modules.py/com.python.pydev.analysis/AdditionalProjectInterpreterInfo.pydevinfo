@@ -1,0 +1,22 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/modules.py/com.python.pydev.analysis/v2_indexcache
+dir|1441256152000000000|/home/dheeraj/dheeraj drives/Python eclipse/modules.py/src/dir.py
+m1|1440868091000000000|/home/dheeraj/dheeraj drives/Python eclipse/modules.py/src/m1.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=dir
+2=m1
+-- END DICTIONARY
+-- START TREE 1
+5
+a|1|a!11@
+add|1|AddMoney!18@
+con|1|content!11@
+mon|1|Money!19@
+typ|1|types!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

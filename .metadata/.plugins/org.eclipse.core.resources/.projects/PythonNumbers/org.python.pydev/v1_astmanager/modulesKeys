@@ -1,0 +1,21 @@
+MODULES_MANAGER_V2
+abs|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/abs.py
+ceil|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/ceil.py
+choice|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/choice.py
+cmp|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/cmp.py
+exp|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/exp.py
+fabs|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/fabs.py
+floor|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/floor.py
+log|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/log.py
+log10|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/log10.py
+max|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/max.py
+min|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/min.py
+modf|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/modf.py
+pow|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/pow.py
+random2|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/random2.py
+randomrange|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/randomrange.py
+round|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/round.py
+seed|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/seed.py
+shuffle|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/shuffle.py
+sqrt|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/sqrt.py
+uniform|/home/dheeraj/dheeraj drives/Python eclipse/PythonNumbers/src/uniform.py

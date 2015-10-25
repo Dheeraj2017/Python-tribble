@@ -1,0 +1,15 @@
+#!/usr/bin/python
+# Open a file
+fo = open("foo.txt", "r+")
+str1= fo.read(10);
+print "Read String is : ", str1
+# Close opened file
+fo.close()
+'''
+The    
+   read()    
+   Method:    
+  
+The read() method reads a string from an open file. It is important to note that Python strings can have binary data
+and not just text.
+'''

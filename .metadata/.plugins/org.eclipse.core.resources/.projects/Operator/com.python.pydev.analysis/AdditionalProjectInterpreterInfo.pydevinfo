@@ -1,0 +1,35 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Operator/com.python.pydev.analysis/v2_indexcache
+operator4|1439698310000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator4.py
+operator5|1439698490000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator5.py
+operator6|1439698656000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator6.py
+operator7|1439698848000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator7.py
+operator8|1439698964000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator8.py
+operator1|1439697378000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator1.py
+operator3|1439698098000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator3.py
+operator2|1439697755000000000|/home/dheeraj/dheeraj drives/Python eclipse/Operator/src/operator2.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+4=operator4
+3=operator5
+2=operator6
+6=operator7
+8=operator8
+1=operator1
+5=operator3
+7=operator2
+-- END DICTIONARY
+-- START TREE 1
+6
+a|8|a!11@a!19@a!27@a!35@a!43@a!51@a!59@a!67@
+b|8|b!35@b!43@b!67@b!59@b!19@b!11@b!51@b!27@
+c|6|c!59@c!11@c!27@c!35@c!67@c!43@
+d|1|d!67@
+e|1|e!67@
+lis|1|lists!19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

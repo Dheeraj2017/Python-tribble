@@ -1,0 +1,48 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/dheeraj/dheeraj drives/Python eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Loops/com.python.pydev.analysis/v2_indexcache
+loop3|1439720019000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/loop3.py
+count_words|1439710544000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/count_words.py
+loop1|1439718464000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/loop1.py
+for5|1440293912000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for5.py
+infniteloop2|1440293100000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/infniteloop2.py
+for6|1440294142000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for6.py
+for7|1440294220000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for7.py
+for1|1440293184000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for1.py
+for2|1440293234000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for2.py
+for3|1440293730000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for3.py
+infiniteloop|1439718751000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/infiniteloop.py
+for4|1440293805000000000|/home/dheeraj/dheeraj drives/Python eclipse/Loops/src/for4.py
+-- END DISKCACHE
+-- START DICTIONARY
+11
+2=loop3
+1=count_words
+3=loop1
+11=for5
+10=for6
+4=infniteloop2
+6=for1
+5=for2
+8=for3
+9=infiniteloop
+7=for4
+-- END DICTIONARY
+-- START TREE 1
+12
+big|2|bigcount!11@bigword!11@
+cou|3|count!19@counts!11@count!27@
+fla|1|flag!35@
+fru|2|fruits!43@fruits!51@
+han|1|handle!11@
+i|1|i!59@
+j|2|j!67@j!59@
+nam|1|name!11@
+num|1|num!75@
+tex|1|text!11@
+var|3|var!83@var!75@var!91@
+wor|1|words!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

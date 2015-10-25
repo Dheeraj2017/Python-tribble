@@ -1,0 +1,89 @@
+1)The commands above are the simplest way to run python programs. If the "execute bit" is set on a .py file, it can be run by name without having to type "python" first. Set the execute bit with the "chmod" command like this:
+
+~/google-python-exercises$ chmod +x hello.py
+~/google-python-exercises$ ./hello.py   ## now can run it as ./hello.py
+Hello World
+**************************************************************************
+
+2)For numbers, the standard operators, +, /, * work in the usual way. There is no ++ operator, but +=, -=, etc. work. If you want integer division, it is most correct to use 2 slashes -- e.g. 6 // 5 is 1 (previous to python 3000, a single / does int division with ints anyway, but moving forward // is the preferred way to indicate that you want int division.)
+
+>>> 15.33/2
+7.665
+>>> 15.33//2
+7.0
+>>> 222.32/32.2
+6.904347826086956
+>>> 222.32//32.2
+6.0
+
+*************************************************************************
+3)Unlike Java, the '+' does not automatically convert numbers or other types to string form. The str() function converts values to a string form so they can be combined with other strings.
+
+>>> pi=3.14
+>>> text='the value of pi is : ' +str(pi)
+>>> print text
+the value of pi is : 3.14
+
+**************************************************************
+4)s.startswith('other'), s.endswith('other') -- tests if the string starts or ends with the given other string
+**************************************************************
+
+5)String Slices
+
+The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end. the Suppose we have s = "Hello"
+
+ the string 'h  e  l  l  o'
+      index  0  1  2  3  4
+      index  -5 -4 -3 -2 -1
+
+****************************************************************
+6)
+   *) s[1:4] is 'ell' -- chars starting at index 1 and extending up to but not including index 4
+   *) s[1:] is 'ello' -- omitting either index defaults to the start or end of the string
+   *) s[:] is 'Hello' -- omitting both always gives us a copy of the whole thing (this is the pythonic way to copy a sequence like a string or list)
+   *) s[1:100] is 'ello' -- an index that is too big is truncated down to the string length 
+
+The standard zero-based index numbers give easy access to chars near the start of the string. As an alternative, Python uses negative numbers to give easy access to the chars at the end of the string: s[-1] is the last char 'o', s[-2] is 'l' the next-to-last char, and so on. Negative index numbers count back from the end of the string:
+
+  *)  s[-1] is 'o' -- last char (1st from the end)
+  *)  s[-4] is 'e' -- 4th from the end
+  *)  s[:-3] is 'He' -- going up to but not including the last 3 chars.
+  *)  s[-3:] is 'llo' -- starting with the 3rd char from the end and extending to the end of the string. 
+
+It is a neat truism of slices that for any index n, s[:n] + s[n:] == s. This works even for n negative or out of bounds. Or put another way s[:n] and s[n:] always partition the string into two string parts, conserving all the characters. As we'll see in the list section later, slices work with lists too.
+
+***********************************************************
+7)FOR and IN
+
+Python's *for* and *in* constructs are extremely useful, and the first use of them we'll see is with lists. The *for* construct -- for var in list -- is an easy way to look at each element in a list (or other collection). Do not add or remove from the list during iteration.
+
+  squares = [1, 4, 9, 16]
+  sum = 0
+  for num in squares:
+    sum += num
+  print sum  ## 30
+
+If you know what sort of thing is in the list, use a variable name in the loop that captures that information such as "num", or "name", or "url". Since python code does not have other syntax to remind you of types, your variable names are a key way for you to keep straight what is going on.
+
+The *in* construct on its own is an easy way to test if an element appears in a list (or other collection) -- value in collection -- tests if the value is in the collection, returning True/False.
+
+  list = ['larry', 'curly', 'moe']
+  if 'curly' in list:
+    print 'yay'
+
+The for/in constructs are very commonly used in Python code and work on data types other than list, so should just memorize their syntax. You may have habits from other languages where you start manually iterating over a collection, where in Python you should just use for/in.
+
+You can also use for/in to work on a string. The string acts like a list of its chars, so for ch in s: print ch prints all the chars in a string.
+
+*******************************************************
+8)Range
+
+The range(n) function yields the numbers 0, 1, ... n-1, and range(a, b) returns a, a+1, ... b-1 -- up to but not including the last number. The combination of the for-loop and the range() function allow you to build a traditional numeric for loop:
+
+  ## print the numbers from 0 through 99
+  for i in range(100):
+    print i
+
+There is a variant xrange() which avoids the cost of building the whole list for performance sensitive cases (in Python 3000, range() will have the good performance behavior and you can forget about xrange()).
+***********************************************************
+
